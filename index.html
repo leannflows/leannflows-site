@@ -71,12 +71,10 @@
   .methodology-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 5rem; align-items: end; }
   .methodology-desc { font-size: 0.92rem; color: var(--muted); line-height: 1.9; }
 
-  .logic-flow { display: flex; align-items: center; justify-content: center; gap: 0; background: var(--light); padding: 3rem 4rem; margin-bottom: 0; width: 100%; }
-  .logic-step { text-align: center; padding: 0 2.5rem; flex: 1; max-width: 260px; }
-  .logic-step-num { font-family: 'Cormorant Garamond', serif; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); display: block; margin-bottom: 0.5rem; }
-  .logic-step-label { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; font-style: italic; color: var(--ink); display: block; }
-  .logic-step-body { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; max-width: 160px; line-height: 1.6; margin-left: auto; margin-right: auto; }
-  .logic-arrow { font-size: 1.5rem; color: var(--warm); flex-shrink: 0; }
+  .logic-flow { margin-bottom: 0; width: 100%; }
+  .logic-flow img { width: 100%; display: block; }
+  .staircase-img { width: 100%; display: block; padding: 0 4rem 4rem; box-sizing: border-box; }
+  .staircase-img img { width: 100%; display: block; }
 
   .staircase { display: flex; flex-direction: column; gap: 2px; }
   .stair { display: grid; grid-template-columns: 220px 1fr; background: var(--forest); transition: background 0.2s; overflow: hidden; }
@@ -225,9 +223,8 @@
     <div class="hero-left-content">
     <span class="hero-label">Brand Strategy Architect</span>
     <h1 class="hero-title">
-      Your brand isn't<br>
-      broken. Its<br>
-      <em>structure is.</em>
+      Your brand isn't broken.<br>
+      Its <em>structure is.</em>
     </h1>
     <p class="hero-body">
       Growth-stage brands stall not because of bad products but because their brand structure no longer reflects what they have become. I diagnose the structural tension and return a decision-grade written brief. No calls. No retainers.
@@ -298,23 +295,7 @@
   </div>
 
     <div class="logic-flow">
-      <div class="logic-step">
-        <span class="logic-step-num">Read</span>
-        <span class="logic-step-label">Observable Event</span>
-        <p class="logic-step-body">What the market, the team, or the numbers are showing on the surface</p>
-      </div>
-      <div class="logic-arrow">→</div>
-      <div class="logic-step">
-        <span class="logic-step-num">Trace</span>
-        <span class="logic-step-label">Structural Tension</span>
-        <p class="logic-step-body">The underlying conflict in positioning, value, or identity generating the symptom</p>
-      </div>
-      <div class="logic-arrow">→</div>
-      <div class="logic-step">
-        <span class="logic-step-num">Diagnose</span>
-        <span class="logic-step-label">Market Implication</span>
-        <p class="logic-step-body">What the tension is costing you in decisions, margin, and market position</p>
-      </div>
+      <img src="surface-diagnosis.png" alt="Observable Event → Structural Tension → Market Implication">
     </div>
 
   <div class="methodology-inner" style="padding: 3rem 4rem 7rem; margin: 0 auto;">
@@ -397,47 +378,8 @@
       </div>
     </div>
 
-    <div class="staircase">
-      <div class="stair">
-        <div class="stair-label">
-          <span class="stair-num">4</span>
-          <span class="stair-name">Governing Assumptions</span>
-        </div>
-        <div class="stair-content">
-          <div class="stair-title">The beliefs holding the structure in place</div>
-          <p class="stair-body">The unspoken convictions about brand, value, and market that were formed early and never examined. These govern every decision even when no one names them.</p>
-        </div>
-      </div>
-      <div class="stair">
-        <div class="stair-label">
-          <span class="stair-num">3</span>
-          <span class="stair-name">Structural Tensions</span>
-        </div>
-        <div class="stair-content">
-          <div class="stair-title">Where the architecture is under strain</div>
-          <p class="stair-body">Channel role tension, experience versus efficiency trade-offs, cross-border exposure creating uneven profitability. The places where the brand's logic is working against itself.</p>
-        </div>
-      </div>
-      <div class="stair">
-        <div class="stair-label">
-          <span class="stair-num">2</span>
-          <span class="stair-name">Recurring Decision Patterns</span>
-        </div>
-        <div class="stair-content">
-          <div class="stair-title">Decisions that keep reopening</div>
-          <p class="stair-body">Channel shifts that create recurring revenue dips. Margin sensitivity that cannot be resolved. Decision cycles with no closure. These patterns are symptoms, not causes.</p>
-        </div>
-      </div>
-      <div class="stair">
-        <div class="stair-label">
-          <span class="stair-num">1</span>
-          <span class="stair-name">Surface Signals</span>
-        </div>
-        <div class="stair-content">
-          <div class="stair-title">What you can already see</div>
-          <p class="stair-body">Revenue pressure, margin volatility, footprint changes, partner transitions. These are the observable events that bring brands to this work.</p>
-        </div>
-      </div>
+    <div class="staircase-img">
+      <img src="structural-clarity-brief.png" alt="Surface Signals → Recurring Decision Patterns → Structural Tensions → Governing Assumptions">
     </div>
   </div>
 </section>
