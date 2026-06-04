@@ -193,11 +193,18 @@
     .problem, .methodology, .how, .deliverable, .request, .about { padding: 4rem 1.5rem; }
     .problem-grid, .methodology-header, .how-header, .deliverable-inner, .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
     .steps, .request-cards { grid-template-columns: 1fr; }
-    .logic-flow { flex-direction: column; gap: 1.5rem; }
-    .logic-arrow { transform: rotate(90deg); }
+    .logic-flow { padding: 2rem 1.5rem; }
+    .logic-flow img { max-width: 100%; }
     .stair { grid-template-columns: 1fr; margin-left: 0 !important; }
+    .case { padding: 2rem 1.5rem; }
     .case-flow { grid-template-columns: 1fr; }
-    .case-arrow { display: block; text-align: center; padding: 0.25rem 0; transform: rotate(90deg); }
+    .case-arrow { display: block; text-align: center; padding: 0.25rem 0; transform: none; }
+    .case-title { font-size: 1.3rem; }
+    .cases-label { padding: 0 1.5rem; }
+    .case-dots { padding: 0 1.5rem; }
+    .staircase-img { padding: 0 1.5rem 3rem; }
+    .staircase-img > div { padding: 0 !important; margin-bottom: 1.25rem; }
+    .staircase-img img { width: 100%; }
     footer { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; }
   }
 </style>
@@ -497,7 +504,7 @@
     </div>
     <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="btn-primary">Request a Brief via Email</a>
     <a href="https://www.linkedin.com/in/leann-flows/" target="_blank" style="font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--paper);border:1px solid rgba(245,242,236,0.4);padding:1rem 2rem;display:inline-block;transition:border-color 0.2s;">Message on LinkedIn</a>
-    <p style="font-size:0.85rem;color:var(--warm);letter-spacing:0.05em;margin-top:1.5rem;font-style:italic;">Scope and investment discussed after initial review.</p>
+    <p style="font-size:0.85rem;color:var(--warm);letter-spacing:0.05em;margin-top:1.5rem;font-style:italic;">Investment range available upon request.</p>
     <p class="request-email-note">Reach out via email or LinkedIn. Share the brand and the transition you're navigating. I'll reply with scope and next steps.</p>
   </div>
 </section>
