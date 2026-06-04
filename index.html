@@ -196,9 +196,15 @@
     .logic-flow { padding: 2rem 1.5rem; }
     .logic-flow img { max-width: 100%; }
     .stair { grid-template-columns: 1fr; margin-left: 0 !important; }
-    .case { padding: 2rem 1.5rem; }
-    .case-flow { grid-template-columns: 1fr; }
-    .case-arrow { display: block; text-align: center; padding: 0.25rem 0; transform: none; }
+    .methodology-inner[style] { padding-left: 0 !important; padding-right: 0 !important; }
+    .cases-wrap { margin-bottom: 2rem; }
+    .case { padding: 1.5rem; }
+    .case-flow { display: flex; flex-direction: column; gap: 0; }
+    .case-block { padding: 1.25rem; width: 100%; box-sizing: border-box; }
+    .case-block p { font-size: 0.85rem; line-height: 1.8; }
+    .case-title { font-size: 1.2rem; margin-bottom: 1.25rem; }
+    .case-arrow { font-size: 0; }
+    .case-arrow::after { content: '↓'; font-size: 1.2rem; color: var(--warm); display: block; text-align: center; padding: 0.5rem 0; }
     .case-title { font-size: 1.3rem; }
     .cases-label { padding: 0 1.5rem; }
     .case-dots { padding: 0 1.5rem; }
