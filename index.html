@@ -261,7 +261,8 @@
   .about-quote { color: var(--ink); font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; line-height: 1.8; border-left: 2px solid var(--warm); padding-left: 1.5rem; margin-top: 2rem; }
 
   footer { background: var(--forest-deep); color: var(--paper); padding: 3.5rem 4rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
-  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; letter-spacing: 0.08em; color: var(--paper); text-decoration: none; }
+  .footer-logo { text-decoration: none; display: inline-block; }
+  .footer-logo-img { display: block; width: 64px; height: 64px; object-fit: cover; background: var(--forest-deep); }
   .footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
   .footer-links a { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: rgba(245,242,236,0.5); transition: color 0.2s; }
   .footer-links a:hover { color: var(--warm); }
@@ -655,7 +656,9 @@
 </section>
 
 <footer>
-  <a href="https://leannflows.com" class="footer-logo">Leann Flows Studio</a>
+  <a href="https://leannflows.com" class="footer-logo">
+    <img src="新Leann_Flows_Studio_Logo.png" alt="Leann Flows Studio" class="footer-logo-img">
+  </a>
   <ul class="footer-links">
     <li><a href="https://www.linkedin.com/in/leann-flows/" target="_blank">LinkedIn</a></li>
     <li><a href="https://leannflows.github.io/leannflows-site/sample.pdf" target="_blank">Sample Brief</a></li>
