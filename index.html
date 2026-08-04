@@ -11,6 +11,7 @@
   gtag('js', new Date());
   gtag('config', 'G-7BSJWCCZ9N');
 </script>
+
 <!-- SEO -->
 <title>Leann Flows Studio · Brand Structural Diagnosis for Growth-Stage Brands</title>
 <meta name="description" content="I diagnose structural drift in growth-stage DTC and retail fashion brands. The deliverable is a 7–9 page written Structural Clarity Brief. No calls. No retainers.">
@@ -244,18 +245,24 @@
   .doc-section-label { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; }
   .deliverable-visual-label { font-size: 0.7rem; letter-spacing: 0.1em; color: rgba(245,242,236,0.4); margin-top: 1.5rem; text-align: center; }
 
-  .signal-read-note { background: var(--paper); border-top: 1px solid var(--light); border-bottom: 1px solid var(--light); padding: 3rem 4rem; }
-  .signal-read-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 240px 1fr; gap: 4rem; align-items: center; }
-  .signal-read-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm); display: block; margin-bottom: 0.5rem; }
-  .signal-read-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--ink); line-height: 1.1; margin-bottom: 0.4rem; }
-  .signal-read-price { font-size: 0.78rem; letter-spacing: 0.08em; color: var(--muted); }
-  .signal-read-right p { font-size: 0.88rem; color: var(--muted); line-height: 1.9; margin-bottom: 1.25rem; }
-  .signal-read-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-  .signal-read-cta:hover { color: var(--warm); border-color: var(--warm); }
-  @media (max-width: 768px) {
-    .signal-read-note { padding: 2.5rem 1.5rem; }
-    .signal-read-inner { grid-template-columns: 1fr; gap: 1.5rem; }
-  }
+  /* PRICING */
+  .pricing { padding: 7rem 4rem; background: var(--ink); color: var(--paper); }
+  .pricing-inner { max-width: 1100px; margin: 0 auto; }
+  .pricing-header { margin-bottom: 4rem; }
+  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .pricing-card { padding: 3rem; position: relative; }
+  .pricing-card.entry { background: rgba(255,255,255,0.04); border-top: 1px solid rgba(200,169,110,0.3); }
+  .pricing-card.full { background: rgba(200,169,110,0.08); border-top: 2px solid var(--warm); }
+  .pricing-card-tag { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm); display: block; margin-bottom: 1rem; }
+  .pricing-card-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--paper); line-height: 1.1; margin-bottom: 0.5rem; }
+  .pricing-card-price { font-size: 0.82rem; color: rgba(245,242,236,0.5); letter-spacing: 0.05em; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(245,242,236,0.1); }
+  .pricing-card-features { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2.5rem; }
+  .pricing-card-features li { font-size: 0.85rem; color: rgba(245,242,236,0.65); padding-left: 1.25rem; position: relative; line-height: 1.7; }
+  .pricing-card-features li::before { content: '→'; position: absolute; left: 0; color: var(--warm); }
+  .pricing-card-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--paper); border-bottom: 1px solid rgba(245,242,236,0.4); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+  .pricing-card.full .pricing-card-cta { color: var(--warm); border-color: var(--warm); }
+  .pricing-card-cta:hover { color: var(--warm); border-color: var(--warm); }
+
   .request { padding: 7rem 4rem; background: var(--forest-deep); color: var(--paper); }
   .request-inner { max-width: 700px; margin: 0 auto; text-align: center; }
   .request-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.5rem; color: var(--paper); }
@@ -344,6 +351,8 @@
     .staircase-img { padding: 0 1.5rem 3rem; }
     .staircase-img > div { padding: 0 !important; margin-bottom: 1.25rem; }
     .staircase-img img { width: 100%; }
+    .pricing { padding: 4rem 1.5rem; }
+    .pricing-grid { grid-template-columns: 1fr; }
     footer { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; }
   }
 </style>
@@ -356,6 +365,7 @@
     <li><a href="#methodology">Methodology</a></li>
     <li><a href="#how">Process</a></li>
     <li><a href="#deliverable">The Brief</a></li>
+    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#request" class="nav-cta">Request a Brief</a>
@@ -524,20 +534,6 @@
       </div>
     </div>
 
-    <div class="signal-read-note">
-      <div class="signal-read-inner">
-        <div class="signal-read-left">
-          <span class="signal-read-label">Entry Point</span>
-          <div class="signal-read-title">Signal Read</div>
-          <div class="signal-read-price">$599 · 1–3 business days</div>
-        </div>
-        <div class="signal-read-right">
-          <p>Not ready for a full diagnosis? Start with a Signal Read. You describe one observable event — a pricing hesitation, a message that stopped landing, a decision your team keeps reopening. I return a written read of the structural tension beneath it and what it's costing you. One signal. One tension. Delivered in writing.</p>
-          <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="signal-read-cta">Request a Signal Read →</a>
-        </div>
-      </div>
-    </div>
-
     <div class="staircase-img">
       <div style="max-width: 900px; margin: 0 auto 1.5rem; padding: 0 4rem;">
         <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem;"><span style="display:block;width:2rem;height:1px;background:var(--warm);"></span>What the brief maps</div>
@@ -630,6 +626,41 @@
   </div>
 </section>
 
+<section class="pricing" id="pricing">
+  <div class="pricing-inner">
+    <div class="pricing-header">
+      <div class="section-label" style="color: var(--warm);">How to Work Together</div>
+      <h2 class="section-title" style="color: var(--paper);">Two ways to <em>start.</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card entry">
+        <span class="pricing-card-tag">Entry Point</span>
+        <div class="pricing-card-title">Signal Read</div>
+        <div class="pricing-card-price">$599 · Delivered in 1–3 business days</div>
+        <ul class="pricing-card-features">
+          <li>You describe one observable event — a pricing hesitation, a message that stopped landing, a decision your team keeps reopening</li>
+          <li>I return a written read of the structural tension beneath it and what it's costing you</li>
+          <li>One signal. One tension. No calls. No materials intake required.</li>
+          <li>Right for you if you want to test the diagnosis before committing to a full brief</li>
+        </ul>
+        <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="pricing-card-cta">Request a Signal Read →</a>
+      </div>
+      <div class="pricing-card full">
+        <span class="pricing-card-tag">Full Diagnosis</span>
+        <div class="pricing-card-title">Structural Clarity Brief</div>
+        <div class="pricing-card-price">Investment range upon request · Delivered in 7–14 business days</div>
+        <ul class="pricing-card-features">
+          <li>7–9 page written diagnosis tracing surface signals down to governing assumptions</li>
+          <li>Structural misalignment mapped across messaging, pricing, and positioning</li>
+          <li>Options matrix and decision gates that stop recurring questions from reopening</li>
+          <li>Right for you if you already know there's a structural problem and need a decision-grade read of the full picture</li>
+        </ul>
+        <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="pricing-card-cta">Request a Structural Clarity Brief →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="request" id="request">
   <div class="request-inner">
     <div class="section-label" style="justify-content: center;">Best For</div>
@@ -696,6 +727,7 @@
     <li><a href="mailto:leann.flows@gmail.com">leann.flows@gmail.com</a></li>
   </ul>
   <span class="footer-copy">© 2026 Leann Flows Studio LLC</span>
+  <a href="semantic-hub.html" style="font-size:0.65rem;color:rgba(245,242,236,0.15);text-decoration:none;letter-spacing:0.05em;">Semantic Reference</a>
 </footer>
 
 <script>
