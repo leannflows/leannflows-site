@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSJWCCZ9N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7BSJWCCZ9N');
+</script>
 
 <!-- SEO -->
 <title>Leann Flows Studio · Brand Structural Diagnosis for Growth-Stage Brands</title>
@@ -10,11 +18,11 @@
 <meta name="keywords" content="brand structural diagnosis, structural clarity brief, brand strategy architect, DTC brand strategy, retail fashion brand consultant, brand drift, growth-stage brands">
 <meta name="author" content="Leann (Pei Chien Lee)">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://leannflows.github.io/leannflows-site/">
+<link rel="canonical" href="https://leannflows.com/">
 
 <!-- Open Graph (社群分享預覽) -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://leannflows.github.io/leannflows-site/">
+<meta property="og:url" content="https://leannflows.com/">
 <meta property="og:title" content="Leann Flows Studio · Brand Structural Diagnosis for Growth-Stage Brands">
 <meta property="og:description" content="I diagnose structural drift in growth-stage DTC and retail fashion brands. The deliverable is a 7–9 page written Structural Clarity Brief. No calls. No retainers.">
 <meta property="og:site_name" content="Leann Flows Studio">
@@ -32,12 +40,12 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://leannflows.github.io/leannflows-site/#person",
+      "@id": "https://leannflows.com/#person",
       "name": "Leann (Pei Chien Lee)",
       "alternateName": "Leann Rho",
-      "jobTitle": "Brand Strategy Architect",
-      "description": "Brand Strategy Architect specializing in structural diagnosis for growth-stage DTC and retail fashion brands. Founder of Leann Flows Studio.",
-      "url": "https://leannflows.github.io/leannflows-site/",
+      "jobTitle": "Brand Structural Strategist",
+      "description": "Brand Structural Strategist specializing in structural diagnosis for growth-stage DTC and retail fashion brands. Founder of Leann Flows Studio.",
+      "url": "https://leannflows.com/",
       "sameAs": [
         "https://www.linkedin.com/in/leann-flows/",
         "https://medium.com/@leann.flows",
@@ -50,12 +58,12 @@
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://leannflows.github.io/leannflows-site/#service",
+      "@id": "https://leannflows.com/#service",
       "name": "Leann Flows Studio",
       "description": "Brand structural diagnosis practice for growth-stage DTC and retail fashion brands. Specializing in identifying structural drift and delivering written Structural Clarity Briefs.",
-      "url": "https://leannflows.github.io/leannflows-site/",
+      "url": "https://leannflows.com/",
       "founder": {
-        "@id": "https://leannflows.github.io/leannflows-site/#person"
+        "@id": "https://leannflows.com/#person"
       },
       "areaServed": "Worldwide",
       "serviceType": "Brand Strategy Consulting",
@@ -70,7 +78,7 @@
               "name": "Structural Clarity Brief",
               "description": "A 7–9 page written diagnosis mapping where a brand's structure has drifted from its core intent. Delivered asynchronously within 7–14 business days. No calls. No retainers.",
               "provider": {
-                "@id": "https://leannflows.github.io/leannflows-site/#person"
+                "@id": "https://leannflows.com/#person"
               }
             }
           }
@@ -237,24 +245,6 @@
   .doc-section-label { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; }
   .deliverable-visual-label { font-size: 0.7rem; letter-spacing: 0.1em; color: rgba(245,242,236,0.4); margin-top: 1.5rem; text-align: center; }
 
-  /* PRICING */
-  .pricing { padding: 7rem 4rem; background: var(--ink); color: var(--paper); }
-  .pricing-inner { max-width: 1100px; margin: 0 auto; }
-  .pricing-header { margin-bottom: 4rem; }
-  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-  .pricing-card { padding: 3rem; position: relative; }
-  .pricing-card.entry { background: rgba(255,255,255,0.04); border-top: 1px solid rgba(200,169,110,0.3); }
-  .pricing-card.full { background: rgba(200,169,110,0.08); border-top: 2px solid var(--warm); }
-  .pricing-card-tag { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm); display: block; margin-bottom: 1rem; }
-  .pricing-card-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--paper); line-height: 1.1; margin-bottom: 0.5rem; }
-  .pricing-card-price { font-size: 0.82rem; color: rgba(245,242,236,0.5); letter-spacing: 0.05em; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(245,242,236,0.1); }
-  .pricing-card-features { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2.5rem; }
-  .pricing-card-features li { font-size: 0.85rem; color: rgba(245,242,236,0.65); padding-left: 1.25rem; position: relative; line-height: 1.7; }
-  .pricing-card-features li::before { content: '→'; position: absolute; left: 0; color: var(--warm); }
-  .pricing-card-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--paper); border-bottom: 1px solid rgba(245,242,236,0.4); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-  .pricing-card.full .pricing-card-cta { color: var(--warm); border-color: var(--warm); }
-  .pricing-card-cta:hover { color: var(--warm); border-color: var(--warm); }
-
   .request { padding: 7rem 4rem; background: var(--forest-deep); color: var(--paper); }
   .request-inner { max-width: 700px; margin: 0 auto; text-align: center; }
   .request-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.5rem; color: var(--paper); }
@@ -343,8 +333,6 @@
     .staircase-img { padding: 0 1.5rem 3rem; }
     .staircase-img > div { padding: 0 !important; margin-bottom: 1.25rem; }
     .staircase-img img { width: 100%; }
-    .pricing { padding: 4rem 1.5rem; }
-    .pricing-grid { grid-template-columns: 1fr; }
     footer { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; }
   }
 </style>
@@ -357,7 +345,6 @@
     <li><a href="#methodology">Methodology</a></li>
     <li><a href="#how">Process</a></li>
     <li><a href="#deliverable">The Brief</a></li>
-    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#request" class="nav-cta">Request a Brief</a>
@@ -369,7 +356,7 @@
       <source src="hero.mp4" type="video/mp4">
     </video>
     <div class="hero-left-content">
-    <span class="hero-label">Brand Strategy Architect</span>
+    <span class="hero-label">Brand Structural Strategist</span>
     <h1 class="hero-title">
       Your brand isn't broken.<br>
       Its <em>structure is.</em>
@@ -618,43 +605,6 @@
   </div>
 </section>
 
-<section class="pricing" id="pricing">
-  <div class="pricing-inner">
-    <div class="pricing-header">
-      <div class="section-label" style="color: var(--warm);">How to Work Together</div>
-      <h2 class="section-title" style="color: var(--paper);">Two ways to <em>start.</em></h2>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card entry">
-        <span class="pricing-card-tag">Entry Point</span>
-        <div class="pricing-card-title">Signal Read</div>
-        <div class="pricing-card-price">$599 · Delivered in 1–3 business days</div>
-        <p style="font-size:0.88rem;color:rgba(245,242,236,0.55);line-height:1.8;margin-bottom:1.75rem;">A focused diagnosis of one visible business signal.</p>
-        <ul class="pricing-card-features">
-          <li>You submit one observable event: a pricing hesitation, a message that stopped landing, or a decision your team keeps reopening</li>
-          <li>I identify the structural tension beneath it and explain what it may be costing you</li>
-          <li>One signal. One tension. Written diagnosis only. No calls or full materials review.</li>
-          <li>Best suited to testing the diagnosis before commissioning a full brief</li>
-        </ul>
-        <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="pricing-card-cta">Request a Signal Read →</a>
-      </div>
-      <div class="pricing-card full">
-        <span class="pricing-card-tag">Full Diagnosis</span>
-        <div class="pricing-card-title">Structural Clarity Brief</div>
-        <div class="pricing-card-price">Investment range provided upon request · Delivered in 7–14 business days</div>
-        <p style="font-size:0.88rem;color:rgba(245,242,236,0.55);line-height:1.8;margin-bottom:1.75rem;">A full diagnosis of the structure producing recurring business signals.</p>
-        <ul class="pricing-card-features">
-          <li>A 7–9 page written diagnosis tracing visible problems back to the assumptions and decisions producing them</li>
-          <li>Structural misalignment mapped across messaging, pricing, positioning, and decision ownership</li>
-          <li>A decision framework showing what must be resolved, what can wait, and what should remain unchanged</li>
-          <li>Best suited to teams that know the problem is structural and need a decision-grade view of the full picture</li>
-        </ul>
-        <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="pricing-card-cta">Request a Structural Clarity Brief →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="request" id="request">
   <div class="request-inner">
     <div class="section-label" style="justify-content: center;">Best For</div>
@@ -691,7 +641,7 @@
   <div class="about-inner">
     <div class="about-label-block">
       <div class="about-name">Leann<br>(Pei Chien Lee)</div>
-      <div class="about-role">Brand Strategy Architect</div>
+      <div class="about-role">Brand Structural Strategist</div>
       <div class="about-location">Taiwan · Global clients</div>
       <div class="about-divider"></div>
     </div>
