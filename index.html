@@ -14,7 +14,7 @@
 
 <!-- SEO -->
 <title>Leann Flows Studio · Brand Structural Diagnosis</title>
-<meta name="description" content="Leann Flows Studio diagnoses structural drift in brands navigating growth, transition, or recurring decision friction. Two written formats. No calls. No retainers.">
+<meta name="description" content="Leann Flows Studio provides brand structural diagnosis for growth-stage consumer brands navigating growth, expansion, and transition. Signal Read and Structural Clarity Brief offer written diagnostic entry points, with Structural Advisory available for continuing clients.">
 <meta name="keywords" content="brand structural diagnosis, structural clarity brief, signal read, brand structural strategist, structural drift, brand decision framework">
 <meta name="author" content="Leann (Pei Chien Lee)">
 <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leannflows.com/">
 <meta property="og:title" content="Leann Flows Studio · Brand Structural Diagnosis">
-<meta property="og:description" content="Structural diagnosis for brands navigating growth, transition, or recurring decision friction. Delivered in two written formats.">
+<meta property="og:description" content="Brand structural diagnosis for growth-stage consumer brands navigating growth, expansion, and transition.">
 <meta property="og:site_name" content="Leann Flows Studio">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://leannflows.com/structural-clarity-brief.png">
@@ -34,7 +34,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Leann Flows Studio · Brand Structural Diagnosis">
-<meta name="twitter:description" content="Structural diagnosis for brands navigating growth, transition, or recurring decision friction. Delivered in two written formats.">
+<meta name="twitter:description" content="Brand structural diagnosis for growth-stage consumer brands navigating growth, expansion, and transition.">
 <meta name="twitter:image" content="https://leannflows.com/structural-clarity-brief.png">
 
 <!-- AEO + GEO: Schema Markup -->
@@ -48,7 +48,7 @@
       "name": "Leann (Pei Chien Lee)",
       "alternateName": "Leann Rho",
       "jobTitle": "Brand Structural Strategist",
-      "description": "Brand Structural Strategist specializing in structural diagnosis for brands navigating growth, transition, or recurring decision friction. Founder of Leann Flows Studio.",
+      "description": "Brand Structural Strategist specializing in structural diagnosis for growth-stage consumer brands navigating growth, expansion, and transition. Founder of Leann Flows Studio.",
       "url": "https://leannflows.com/",
       "sameAs": [
         "https://www.linkedin.com/in/leann-flows/",
@@ -64,7 +64,7 @@
       "@type": "ProfessionalService",
       "@id": "https://leannflows.com/#service",
       "name": "Leann Flows Studio",
-      "description": "An industry-agnostic brand structural diagnosis practice for brands with observable operating patterns. Specializing in identifying structural drift through two written diagnostic formats.",
+      "description": "An independent brand structural diagnosis practice for growth-stage consumer brands navigating product, channel, market, and business-stage expansion.",
       "url": "https://leannflows.com/",
       "founder": {
         "@id": "https://leannflows.com/#person"
@@ -93,7 +93,18 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Structural Clarity Brief",
-              "description": "A 7–9 page written diagnosis mapping where a brand's structure has drifted from its core intent. Delivered asynchronously within 7–14 business days. No calls. No retainers.",
+              "description": "A deeper written diagnosis of recurring structural problems across multiple signals, decision patterns, structural tensions, and governing assumptions. Delivered asynchronously within 7–14 business days.",
+              "provider": {
+                "@id": "https://leannflows.com/#person"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Structural Advisory",
+              "description": "A 12-month ongoing structural decision-support engagement for continuing clients who have completed a Structural Clarity Brief.",
               "provider": {
                 "@id": "https://leannflows.com/#person"
               }
@@ -243,6 +254,14 @@
   .pricing-card.full .pricing-card-cta { color: var(--warm); border-color: var(--warm); }
   .pricing-card-cta:hover { color: var(--warm); border-color: var(--warm); }
 
+  .advisory { padding: 7rem 4rem; background: var(--paper); }
+  .advisory-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 6rem; align-items: start; }
+  .advisory-body { font-size: 0.92rem; color: var(--muted); line-height: 1.9; }
+  .advisory-body p { margin-bottom: 1.25rem; }
+  .advisory-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0 2rem; }
+  .advisory-list li { font-size: 0.86rem; color: var(--ink); padding-left: 1.25rem; position: relative; line-height: 1.7; }
+  .advisory-list li::before { content: '→'; position: absolute; left: 0; color: var(--warm); }
+
   .request { padding: 7rem 4rem; background: var(--forest-deep); color: var(--paper); }
   .request-inner { max-width: 700px; margin: 0 auto; text-align: center; }
   .request-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.5rem; color: var(--paper); }
@@ -314,8 +333,8 @@
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 3rem 1.5rem; }
     .hero-right { padding: 3rem 1.5rem; min-height: 55vh; }
-    .problem, .methodology, .how, .deliverable, .request, .about { padding: 4rem 1.5rem; }
-    .problem-grid, .methodology-header, .how-header, .deliverable-inner, .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .problem, .methodology, .how, .deliverable, .advisory, .request, .about { padding: 4rem 1.5rem; }
+    .problem-grid, .methodology-header, .how-header, .deliverable-inner, .advisory-inner, .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
     .steps, .request-cards { grid-template-columns: 1fr; }
     .logic-flow { padding: 2rem 1.5rem; }
     .logic-flow img { max-width: 100%; }
@@ -352,6 +371,7 @@
     <li><a href="#how">Process</a></li>
     <li><a href="#deliverable">The Brief</a></li>
     <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#advisory">Advisory</a></li>
     <li><a href="#about">About</a></li>
   </ul>
   <a href="#pricing" class="nav-cta">Ways to Start</a>
@@ -365,11 +385,11 @@
     <div class="hero-left-content">
     <span class="hero-label">Brand Structural Strategist</span>
     <h1 class="hero-title">
-      Your brand isn't broken.<br>
-      Its <em>structure is.</em>
+      Growth changes the business.<br>
+      Your brand structure must <em>keep up.</em>
     </h1>
     <p class="hero-body">
-      Brands can outgrow the structure that once made them coherent. I diagnose where that drift is shaping decisions, internal alignment, and market position, then return a decision-grade read in one of two written formats. No calls. No retainers.
+      I work with founders and C-level leaders at growth-stage consumer brands when expansion, transition, or increasing complexity begins to stretch the logic that once held the brand together. I diagnose the structural tension before another major positioning, portfolio, channel, or market decision is made.
     </p>
     <div class="hero-actions">
       <a href="#deliverable" class="btn-primary">See the Output</a>
@@ -378,19 +398,19 @@
     </div>
   </div>
   <div class="hero-right">
-    <p class="hero-quote">"The market doesn't misunderstand you. It reads you exactly as you're structured."</p>
+    <p class="hero-quote">"Growth does not break a brand. It reveals whether the structure can still support what the business has become."</p>
     <div class="hero-stat-row">
       <div class="hero-stat">
-        <span class="hero-stat-num">7–9</span>
-        <span class="hero-stat-label">Page written brief</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">100%</span>
-        <span class="hero-stat-label">Async. No calls.</span>
-      </div>
-      <div class="hero-stat">
         <span class="hero-stat-num">2</span>
-        <span class="hero-stat-label">Written formats</span>
+        <span class="hero-stat-label">Diagnostic entry points</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Written-first</span>
+        <span class="hero-stat-label">Async by default</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">12 mo.</span>
+        <span class="hero-stat-label">Advisory for continuing clients</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-num">1–14</span>
@@ -411,11 +431,11 @@
       </h2>
     </div>
     <ul class="problem-list">
-      <li>Your messaging made sense at launch. You've evolved, and the words no longer fit.</li>
-      <li>Customers hesitate at the price point, even when your product justifies it.</li>
-      <li>You're attracting the wrong audience, or losing the right one mid-funnel.</li>
-      <li>Your team keeps revisiting decisions that should have been settled months ago.</li>
-      <li>You can feel the drift. You can't name it, so you can't fix it.</li>
+      <li>New products or categories keep expanding the portfolio, but the role of the brand is becoming harder to define.</li>
+      <li>New channels change how customers encounter and understand the brand.</li>
+      <li>Different markets begin interpreting the brand differently.</li>
+      <li>Individual growth decisions make sense on their own, but together they begin creating structural tension.</li>
+      <li>The business has moved into a new stage, while the brand logic still belongs to the previous one.</li>
     </ul>
   </div>
 </section>
@@ -541,24 +561,24 @@
         </h2>
       </div>
       <p class="how-desc">
-        No discovery calls. No workshops. You send me your brand materials and I diagnose the structural tension, then return a decision-grade written brief with clear options and guardrails. Designed for founders and brand leads who need a clear basis for decisions before execution begins.
+        The work is written-first and asynchronous by default. You send the relevant materials, I diagnose the structural tension, then return a decision-grade written response with clear options and guardrails. Executive discussion is used when a decision is high-stakes, cross-functional, or still unresolved after the written analysis.
       </p>
     </div>
     <div class="steps">
       <div class="step">
         <span class="step-num">01</span>
         <div class="step-title">Send the Brief Request</div>
-        <p class="step-body">Email me the brand and the transition you're navigating. I'll reply with scope and next steps. No intake call required.</p>
+        <p class="step-body">Email me the brand, the business context, and the transition you are navigating. I will reply with the most appropriate diagnostic scope and next steps.</p>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <div class="step-title">Materials Intake</div>
-        <p class="step-body">You share your brand assets: positioning docs, website, campaigns. I read everything before writing a single word. No meetings.</p>
+        <p class="step-body">You share the relevant materials: positioning, portfolio, website, channel context, research, and other decision inputs. I review the evidence before writing the diagnosis.</p>
       </div>
       <div class="step">
         <span class="step-num">03</span>
         <div class="step-title">Structural Clarity Brief</div>
-        <p class="step-body">A 7–9 page written diagnosis of where your brand structure has drifted, with clear options, decision gates, and guardrails to stop the same tensions from resurfacing.</p>
+        <p class="step-body">A deeper written diagnosis of recurring structural problems, showing what needs to change, what should remain intact, and which guardrails should guide the next stage.</p>
       </div>
     </div>
   </div>
@@ -570,14 +590,14 @@
       <div class="section-label" style="color: var(--ink);">The Deliverable</div>
       <h2 class="deliverable-title">Structural<br>Clarity Brief</h2>
       <p class="deliverable-body">
-        A 7–9 page written diagnosis. Not a strategy deck. Not a brand guide. A precise structural reading of where your brand has drifted from its core intent and what that drift is costing you in decisions, alignment, and market position.
+        A deeper written diagnosis of recurring or cross-functional structural problems. It traces multiple signals back to the decision patterns, structural tensions, and governing assumptions producing them, then clarifies what needs to change, what should remain intact, and which guardrails should guide the next stage.
       </p>
       <ul class="deliverable-features">
-        <li>Structural misalignment mapped across messaging, pricing, and positioning</li>
-        <li>Named drift patterns with specific evidence from your materials</li>
-        <li>Clear options and decision gates that stop recurring questions from reopening</li>
-        <li>Written for founders and brand leads, not agencies</li>
-        <li>Delivered async within 7–14 business days</li>
+        <li>Multiple signals traced across recurring decision patterns</li>
+        <li>Structural tensions and governing assumptions identified with evidence</li>
+        <li>Clear view of what needs to change and what should remain intact</li>
+        <li>Decision gates and structural guardrails for the next stage</li>
+        <li>Written for founders and C-level leaders · Delivered within 7–14 business days</li>
       </ul>
       <a href="https://leannflows.github.io/leannflows-site/sample.pdf" class="btn-dark" target="_blank">View Sample Brief →</a>
       <a href="#pricing" class="btn-dark">Choose a Starting Point →</a>
@@ -621,20 +641,20 @@
       <em>inflection points.</em>
     </h2>
     <p class="request-body">
-      The work is industry-agnostic. It is best suited to brands with enough operating history for recurring patterns to be visible, especially during growth, transition, repositioning, or repeated decisions that no longer resolve cleanly.
+      Best suited to growth-stage consumer brands with enough operating history for recurring patterns to be visible, especially while navigating portfolio, channel, market, or business-stage expansion.
     </p>
     <div class="request-cards">
       <div class="request-card">
-        <div class="request-card-title">Growth or Transition</div>
-        <p class="request-card-body">Entering a new market, channel, category, or business phase and finding that the brand no longer translates cleanly.</p>
+        <div class="request-card-title">Portfolio Expansion</div>
+        <p class="request-card-body">Products, categories, or sub-brands are expanding, and the role of the brand is becoming harder to define consistently.</p>
       </div>
       <div class="request-card">
-        <div class="request-card-title">Internal Misalignment</div>
-        <p class="request-card-body">Your team keeps revisiting what the brand stands for. The decisions aren't sticking because the structural logic was never made explicit.</p>
+        <div class="request-card-title">Channel / Market Expansion</div>
+        <p class="request-card-body">New channels or markets are changing how the brand is encountered, interpreted, or positioned.</p>
       </div>
       <div class="request-card">
-        <div class="request-card-title">Decision Friction</div>
-        <p class="request-card-body">Brand decisions keep reopening or taking longer than they should because the underlying structure is carrying unresolved tension.</p>
+        <div class="request-card-title">Business Transition</div>
+        <p class="request-card-body">The business has entered a new stage, but the brand logic and decision rules still belong to the previous one.</p>
       </div>
     </div>
   </div>
@@ -653,10 +673,10 @@
         <div class="pricing-card-price">$599 · Delivered in 1–3 business days</div>
         <p style="font-size:0.88rem;color:rgba(245,242,236,0.55);line-height:1.8;margin-bottom:1.75rem;">A focused diagnosis of one visible business signal.</p>
         <ul class="pricing-card-features">
-          <li>You submit one observable event: a pricing hesitation, a message that stopped landing, or a decision your team keeps reopening</li>
-          <li>I identify the structural tension beneath it and explain what it may be costing you</li>
-          <li>One signal. One tension. Written diagnosis only. No calls or full materials review.</li>
-          <li>Best suited to testing the diagnosis before commissioning a full brief</li>
+          <li>You submit one observable business event: a launch, channel move, category expansion, market entry, or other material signal</li>
+          <li>I identify the structural tension beneath it and explain why it matters</li>
+          <li>One event. One tension. One focused written diagnosis.</li>
+          <li>Best suited when one event appears significant, but the wider structural issue is not yet clear</li>
         </ul>
         <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="pricing-card-cta">Request a Signal Read →</a>
         <a href="https://www.linkedin.com/in/leann-flows/" target="_blank" class="pricing-card-cta" style="margin-top:0.75rem;display:inline-block;color:rgba(245,242,236,0.4);border-color:rgba(245,242,236,0.2);">Or message on LinkedIn →</a>
@@ -667,14 +687,35 @@
         <div class="pricing-card-price">Investment range provided upon request · Delivered in 7–14 business days</div>
         <p style="font-size:0.88rem;color:rgba(245,242,236,0.55);line-height:1.8;margin-bottom:1.75rem;">A full diagnosis of the structure producing recurring business signals.</p>
         <ul class="pricing-card-features">
-          <li>A 7–9 page written diagnosis tracing visible problems back to the assumptions and decisions producing them</li>
-          <li>Structural misalignment mapped across messaging, pricing, positioning, and decision ownership</li>
-          <li>A decision framework showing what must be resolved, what can wait, and what should remain unchanged</li>
-          <li>Best suited to teams that know the problem is structural and need a decision-grade view of the full picture</li>
+          <li>Multiple signals traced across recurring decision patterns, structural tensions, and governing assumptions</li>
+          <li>A diagnosis of where the original brand logic is no longer supporting the business it has become</li>
+          <li>A decision framework showing what needs to change, what should remain intact, and which guardrails should guide the next stage</li>
+          <li>Best suited to recurring or cross-functional problems that can no longer be explained by one event alone</li>
         </ul>
         <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="pricing-card-cta">Request a Structural Clarity Brief →</a>
         <a href="https://www.linkedin.com/in/leann-flows/" target="_blank" class="pricing-card-cta" style="margin-top:0.75rem;display:inline-block;color:rgba(245,242,236,0.4);border-color:rgba(245,242,236,0.2);">Or message on LinkedIn →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="advisory" id="advisory">
+  <div class="advisory-inner">
+    <div>
+      <div class="section-label">For Continuing Clients</div>
+      <h2 class="section-title">Structural<br><em>Advisory.</em></h2>
+    </div>
+    <div class="advisory-body">
+      <p>A 12-month advisory engagement for companies that have completed a Structural Clarity Brief and are navigating continued growth, expansion, or transition.</p>
+      <p>The role is not to manage the brand day to day. It is to review material decisions against the structural diagnosis already established.</p>
+      <ul class="advisory-list">
+        <li>Ongoing structural review of major product, portfolio, channel, market, positioning, partnership, or brand architecture decisions</li>
+        <li>Quarterly Structural Review of assumptions, tensions, guardrails, and emerging risks</li>
+        <li>Executive discussion when a decision is high-stakes, cross-functional, or unresolved after written analysis</li>
+        <li>Annual Structural Review to assess what still holds, what needs to evolve, and what should guide the next stage</li>
+      </ul>
+      <p><strong>Available after a Structural Clarity Brief.</strong> Written-first and asynchronous by default.</p>
+      <a href="mailto:leann.flows@gmail.com?subject=Structural%20Advisory%20Inquiry" class="btn-dark">Ask About Structural Advisory →</a>
     </div>
   </div>
 </section>
@@ -689,16 +730,16 @@
     </div>
     <div class="about-body">
       <p>
-        I focus on <strong>brands whose original structure no longer fully supports the business they have become</strong>. The work is not limited by industry or employee count. What matters is whether there are enough observable signals and recurring decisions to diagnose a structural pattern.
+        I work with <strong>founders and C-level leaders at growth-stage consumer brands whose original structure no longer fully supports the business they have become</strong>. The work is most relevant when growth, expansion, or transition creates enough observable signals and recurring decisions to diagnose a structural pattern.
       </p>
       <p>
-        My approach is <strong>written-first and asynchronous</strong>. No recurring meetings. No discovery workshops. I diagnose the structural tension beneath the surface signals: the repeated decisions, the pricing hesitation, the messaging that used to fit and no longer does. Then I return a decision-grade brief that names what's actually happening.
+        My approach is <strong>written-first and asynchronous by default</strong>. I diagnose the structural tension beneath observable business signals and return a decision-grade written analysis that clarifies what needs to change, what should remain intact, and where decisions are beginning to work against one another.
       </p>
       <p>
-        There are two written ways to begin. The Signal Read focuses on one observable business event. The Structural Clarity Brief provides a full diagnosis of the recurring structure beneath multiple signals. Both are designed to give founders and brand leads <strong>the clarity to make decisions and stop revisiting them</strong>.
+        There are two diagnostic ways to begin. The Signal Read focuses on one observable business event. The Structural Clarity Brief provides a deeper diagnosis of the recurring structure beneath multiple signals. For continuing clients, Structural Advisory provides ongoing review of material decisions as the business keeps evolving.
       </p>
       <p class="about-quote">
-        "A brand that masters language will always claim its place in the market. Not by being louder, but by saying what truly lands."
+        "Growth does not break a brand. It reveals whether the structure can still support what the business has become."
       </p>
     </div>
   </div>
