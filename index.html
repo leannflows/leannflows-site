@@ -250,17 +250,33 @@
   .pricing-card-features { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2.5rem; }
   .pricing-card-features li { font-size: 0.85rem; color: rgba(245,242,236,0.65); padding-left: 1.25rem; position: relative; line-height: 1.7; }
   .pricing-card-features li::before { content: '→'; position: absolute; left: 0; color: var(--warm); }
-  .pricing-card-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--paper); border-bottom: 1px solid rgba(245,242,236,0.4); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-  .pricing-card.full .pricing-card-cta { color: var(--warm); border-color: var(--warm); }
+  .pricing-card-cta { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--warm); border-bottom: 1px solid var(--warm); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+  .pricing-card-sample { color: rgba(245,242,236,0.65); border-color: rgba(245,242,236,0.3); }
   .pricing-card-cta:hover { color: var(--warm); border-color: var(--warm); }
+  .pricing-card-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 0.85rem; }
+  .pricing-linkedin { margin-top: 2.5rem; text-align: center; }
+  .pricing-linkedin a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: rgba(245,242,236,0.5); border-bottom: 1px solid rgba(245,242,236,0.22); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+  .pricing-linkedin a:hover { color: var(--warm); border-color: var(--warm); }
 
-  .advisory { padding: 7rem 4rem; background: var(--paper); }
-  .advisory-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 6rem; align-items: start; }
-  .advisory-body { font-size: 0.92rem; color: var(--muted); line-height: 1.9; }
+  .advisory { padding: 3.5rem 4rem; background: var(--accent); color: var(--paper); border-top: 1px solid rgba(200,169,110,0.35); }
+  .advisory-inner { max-width: 1100px; margin: 0 auto; }
+  .advisory-disclosure { border-top: 1px solid rgba(245,242,236,0.18); border-bottom: 1px solid rgba(245,242,236,0.18); }
+  .advisory-summary { display: grid; grid-template-columns: 0.75fr 1.5fr auto; gap: 3rem; align-items: center; padding: 2.5rem 0; cursor: pointer; list-style: none; }
+  .advisory-summary::-webkit-details-marker { display: none; }
+  .advisory-summary::marker { display: none; content: ''; }
+  .advisory-kicker { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); }
+  .advisory-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 300; line-height: 1.1; margin-bottom: 0.45rem; color: var(--paper); }
+  .advisory-summary-text { font-size: 0.86rem; color: rgba(245,242,236,0.62); line-height: 1.7; }
+  .advisory-toggle { display: flex; align-items: center; gap: 0.75rem; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); white-space: nowrap; }
+  .advisory-toggle-symbol { color: var(--warm); font-size: 1.1rem; line-height: 1; transition: transform 0.2s; }
+  .advisory-disclosure[open] .advisory-toggle-symbol { transform: rotate(45deg); }
+  .advisory-body { max-width: 720px; margin-left: auto; padding: 0 0 2.75rem; font-size: 0.92rem; color: rgba(245,242,236,0.68); line-height: 1.9; }
   .advisory-body p { margin-bottom: 1.25rem; }
   .advisory-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0 2rem; }
-  .advisory-list li { font-size: 0.86rem; color: var(--ink); padding-left: 1.25rem; position: relative; line-height: 1.7; }
+  .advisory-list li { font-size: 0.86rem; color: rgba(245,242,236,0.82); padding-left: 1.25rem; position: relative; line-height: 1.7; }
   .advisory-list li::before { content: '→'; position: absolute; left: 0; color: var(--warm); }
+  .advisory .btn-dark { background: var(--paper); color: var(--ink); }
+  .advisory .btn-dark:hover { background: var(--warm); }
 
   .request { padding: 7rem 4rem; background: var(--forest-deep); color: var(--paper); }
   .request-inner { max-width: 700px; margin: 0 auto; text-align: center; }
@@ -335,6 +351,9 @@
     .hero-right { padding: 3rem 1.5rem; min-height: 55vh; }
     .problem, .methodology, .how, .deliverable, .advisory, .request, .about { padding: 4rem 1.5rem; }
     .problem-grid, .methodology-header, .how-header, .deliverable-inner, .advisory-inner, .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .advisory-summary { grid-template-columns: 1fr; gap: 1rem; padding: 2rem 0; }
+    .advisory-toggle { margin-top: 0.5rem; }
+    .advisory-body { margin-left: 0; }
     .steps, .request-cards { grid-template-columns: 1fr; }
     .logic-flow { padding: 2rem 1.5rem; }
     .logic-flow img { max-width: 100%; }
@@ -393,7 +412,7 @@
     </p>
     <div class="hero-actions">
       <a href="#deliverable" class="btn-primary">See the Output</a>
-      <a href="https://leannflows.github.io/leannflows-site/sample.pdf" class="btn-ghost" target="_blank">View Sample Brief</a>
+      <a href="/structural-clarity-brief-public-case-simulation.pdf" class="btn-ghost" target="_blank">View Structural Clarity Brief</a>
     </div>
     </div>
   </div>
@@ -599,7 +618,7 @@
         <li>Decision gates and structural guardrails for the next stage</li>
         <li>Written for founders and C-level leaders · Delivered within 7–14 business days</li>
       </ul>
-      <a href="https://leannflows.github.io/leannflows-site/sample.pdf" class="btn-dark" target="_blank">View Sample Brief →</a>
+      <a href="/structural-clarity-brief-public-case-simulation.pdf" class="btn-dark" target="_blank">View Structural Clarity Brief →</a>
       <a href="#pricing" class="btn-dark">Choose a Starting Point →</a>
     </div>
     <div class="deliverable-visual">
@@ -678,8 +697,10 @@
           <li>One event. One tension. One focused written diagnosis.</li>
           <li>Best suited when one event appears significant, but the wider structural issue is not yet clear</li>
         </ul>
-        <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="pricing-card-cta">Request a Signal Read →</a>
-        <a href="https://www.linkedin.com/in/leann-flows/" target="_blank" class="pricing-card-cta" style="margin-top:0.75rem;display:inline-block;color:rgba(245,242,236,0.4);border-color:rgba(245,242,236,0.2);">Or message on LinkedIn →</a>
+        <div class="pricing-card-actions">
+          <a href="/signal-read-public-case-sample.pdf" target="_blank" class="pricing-card-cta pricing-card-sample">View Sample ↗</a>
+          <a href="mailto:leann.flows@gmail.com?subject=Signal%20Read%20Request&body=Brand:%0D%0AWebsite:%0D%0AThe%20signal%20I%20want%20read:%0D%0A" class="pricing-card-cta">Request a Signal Read →</a>
+        </div>
       </div>
       <div class="pricing-card full">
         <span class="pricing-card-tag">Full Diagnosis</span>
@@ -692,31 +713,40 @@
           <li>A decision framework showing what needs to change, what should remain intact, and which guardrails should guide the next stage</li>
           <li>Best suited to recurring or cross-functional problems that can no longer be explained by one event alone</li>
         </ul>
-        <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="pricing-card-cta">Request a Structural Clarity Brief →</a>
-        <a href="https://www.linkedin.com/in/leann-flows/" target="_blank" class="pricing-card-cta" style="margin-top:0.75rem;display:inline-block;color:rgba(245,242,236,0.4);border-color:rgba(245,242,236,0.2);">Or message on LinkedIn →</a>
+        <div class="pricing-card-actions">
+          <a href="/structural-clarity-brief-public-case-simulation.pdf" target="_blank" class="pricing-card-cta pricing-card-sample">View Sample ↗</a>
+          <a href="mailto:leann.flows@gmail.com?subject=Structural%20Clarity%20Brief%20Request&body=Company:%0D%0AWebsite:%0D%0AThe%20transition%20we%20are%20navigating:%0D%0A" class="pricing-card-cta">Request a Structural Clarity Brief →</a>
+        </div>
       </div>
+    </div>
+    <div class="pricing-linkedin">
+      <a href="https://www.linkedin.com/in/leann-flows/" target="_blank">Prefer LinkedIn? → Message me there</a>
     </div>
   </div>
 </section>
 
 <section class="advisory" id="advisory">
   <div class="advisory-inner">
-    <div>
-      <div class="section-label">For Continuing Clients</div>
-      <h2 class="section-title">Structural<br><em>Advisory.</em></h2>
-    </div>
-    <div class="advisory-body">
-      <p>A 12-month advisory engagement for companies that have completed a Structural Clarity Brief and are navigating continued growth, expansion, or transition.</p>
-      <p>The role is not to manage the brand day to day. It is to review material decisions against the structural diagnosis already established.</p>
-      <ul class="advisory-list">
-        <li>Ongoing structural review of major product, portfolio, channel, market, positioning, partnership, or brand architecture decisions</li>
-        <li>Quarterly Structural Review of assumptions, tensions, guardrails, and emerging risks</li>
-        <li>Executive discussion when a decision is high-stakes, cross-functional, or unresolved after written analysis</li>
-        <li>Annual Structural Review to assess what still holds, what needs to evolve, and what should guide the next stage</li>
-      </ul>
-      <p><strong>Available after a Structural Clarity Brief.</strong> Written-first and asynchronous by default.</p>
-      <a href="mailto:leann.flows@gmail.com?subject=Structural%20Advisory%20Inquiry" class="btn-dark">Ask About Structural Advisory →</a>
-    </div>
+    <details class="advisory-disclosure">
+      <summary class="advisory-summary">
+        <div class="advisory-kicker">For Continuing Clients</div>
+        <div>
+          <h2 class="advisory-title">Structural Advisory</h2>
+          <p class="advisory-summary-text">12-month structural decision support after a Structural Clarity Brief.</p>
+        </div>
+        <div class="advisory-toggle">Explore Advisory <span class="advisory-toggle-symbol" aria-hidden="true">＋</span></div>
+      </summary>
+      <div class="advisory-body">
+        <p>Available to continuing clients who have completed a Structural Clarity Brief and are navigating continued growth, expansion, or transition.</p>
+        <p>The role is to review material decisions against the diagnosis already established, not to manage the brand day to day.</p>
+        <ul class="advisory-list">
+          <li>Review of major product, portfolio, channel, market, positioning, partnership, or brand architecture decisions</li>
+          <li>Quarterly Structural Review of assumptions, tensions, guardrails, and emerging risks, with executive discussion when needed</li>
+          <li>Annual Structural Review of what still holds, what needs to evolve, and what should guide the next stage</li>
+        </ul>
+        <a href="mailto:leann.flows@gmail.com?subject=Structural%20Advisory%20Inquiry" class="btn-dark">Ask About Structural Advisory →</a>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -748,8 +778,8 @@
 <footer>
   <a href="https://leannflows.com" class="footer-logo">Leann Flows Studio</a>
   <ul class="footer-links">
-    <li><a href="https://www.linkedin.com/in/leann-flows/" target="_blank">LinkedIn</a></li>
-    <li><a href="https://leannflows.github.io/leannflows-site/sample.pdf" target="_blank">Sample Brief</a></li>
+    <li><a href="/signal-read-public-case-sample.pdf" target="_blank">Signal Read Sample</a></li>
+    <li><a href="/structural-clarity-brief-public-case-simulation.pdf" target="_blank">Structural Clarity Brief Sample</a></li>
     <li><a href="resources.html">Methodology Origin</a></li>
     <li><a href="mailto:leann.flows@gmail.com" title="Email" style="font-size:1.1rem;line-height:1;">✉</a></li>
   </ul>
