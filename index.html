@@ -308,27 +308,6 @@
   .footer-links a:hover { color: var(--warm); }
   .footer-copy { font-size: 0.72rem; color: rgba(245,242,236,0.3); }
 
-  /* CASES */
-  .cases-wrap { margin-bottom: 4rem; }
-  .cases-label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem; }
-  .cases-label::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--warm); }
-  .cases-carousel { position: relative; }
-  .case { display: none; background: #1a1a18; padding: 3.5rem; }
-  .case.active { display: block; animation: fadeUp 0.4s ease both; }
-  .case-index { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,169,110,0.5); margin-bottom: 1.5rem; }
-  .case-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 300; color: var(--paper); line-height: 1.25; margin-bottom: 2.5rem; }
-  .case-flow { display: grid; grid-template-columns: 1fr 40px 1fr 40px 1fr; align-items: center; gap: 0; margin-bottom: 2.5rem; }
-  .case-block { background: rgba(255,255,255,0.04); padding: 1.75rem; border-top: 1px solid var(--warm); }
-  .case-block-implication { border-top-color: var(--warm); }
-  .case-block-label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm); display: block; margin-bottom: 0.75rem; }
-  .case-block p { font-size: 0.85rem; color: rgba(245,242,236,0.65); line-height: 1.8; }
-  .case-arrow { text-align: center; color: var(--warm); font-size: 1.2rem; }
-  .case-next { background: none; border: 1px solid rgba(200,169,110,0.4); color: var(--warm); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.75rem 1.75rem; cursor: pointer; transition: background 0.2s, color 0.2s; font-family: 'DM Sans', sans-serif; }
-  .case-next:hover { background: var(--warm); color: var(--ink); }
-  .case-dots { display: flex; gap: 0.6rem; margin-top: 1.5rem; }
-  .case-dot { width: 6px; height: 6px; padding: 0; border: 0; border-radius: 50%; background: rgba(200,169,110,0.3); cursor: pointer; transition: background 0.2s; }
-  .case-dot.active { background: var(--warm); }
-
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
   .hero-label   { animation: fadeUp 0.6s 0.0s ease both; }
   .hero-title   { animation: fadeUp 0.6s 0.1s ease both; }
@@ -359,17 +338,6 @@
     .logic-flow img { max-width: 100%; }
     .stair { grid-template-columns: 1fr; margin-left: 0 !important; width: 100vw; margin-right: calc(-1.5rem); }
     .methodology-inner[style] { padding-left: 0 !important; padding-right: 0 !important; }
-    .cases-wrap { margin-bottom: 2rem; }
-    .case { padding: 1.5rem; }
-    .case-flow { display: flex; flex-direction: column; gap: 0; }
-    .case-block { padding: 1.25rem; width: 100%; box-sizing: border-box; }
-    .case-block p { font-size: 0.85rem; line-height: 1.8; }
-    .case-title { font-size: 1.2rem; margin-bottom: 1.25rem; }
-    .case-arrow { font-size: 0; }
-    .case-arrow::after { content: '↓'; font-size: 1.2rem; color: var(--warm); display: block; text-align: center; padding: 0.5rem 0; }
-    .case-title { font-size: 1.3rem; }
-    .cases-label { padding: 0 1.5rem; }
-    .case-dots { padding: 0 1.5rem; }
     .request-inner .btn-primary { display: block; width: 100%; margin-bottom: 1rem; text-align: center; }
     .request-inner a[href*="linkedin"] { display: block; width: 100%; text-align: center; }
     .staircase-img { padding: 0 1.5rem 3rem; }
@@ -378,6 +346,43 @@
     .pricing { padding: 4rem 1.5rem; }
     .pricing-grid { grid-template-columns: 1fr; }
     footer { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; }
+  }
+
+  /* Evidence-led methodology and sample preview */
+  .methodology { padding: 0; }
+  .method-shell { --muted: #68645d; max-width: 1200px; margin: 0 auto; padding: 6rem 4rem; }
+  .method-shell .section-label { color: #856735; }
+  .method-shell .methodology-header { margin-bottom: 3.5rem; align-items: start; }
+  .sample-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 1.5rem; }
+  .sample-kicker { display: block; color: var(--muted); text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; margin-bottom: .65rem; }
+  .sample-heading h3, .broader-heading h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; line-height: 1.25; }
+  .sample-heading > p { font-size: .75rem; line-height: 1.7; color: var(--muted); text-align: right; flex-shrink: 0; }
+  .signal-preview { margin: 0; }
+  .signal-preview > a { display: block; border: 1px solid rgba(26,26,24,.17); }
+  .signal-preview img { display: block; width: 100%; height: auto; }
+  .signal-preview figcaption { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; font-size: .75rem; color: var(--muted); }
+  .signal-preview figcaption a { color: var(--ink); text-underline-offset: 4px; }
+  .decision-example { display: grid; grid-template-columns: 1fr 1.25fr; gap: 4rem; padding: 3rem 0; margin-top: 2rem; border-top: 1px solid rgba(26,26,24,.15); }
+  .decision-example h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; line-height: 1.2; }
+  .decision-copy p { font-size: .92rem; line-height: 1.85; color: var(--muted); margin-bottom: 1rem; }
+  .decision-copy .sample-boundary { font-size: .8rem; padding-left: 1rem; border-left: 2px solid var(--warm); margin: 1.5rem 0; }
+  .broader-example { border-top: 1px solid rgba(26,26,24,.15); padding-top: 3rem; }
+  .broader-heading { max-width: 760px; margin-bottom: 2rem; }
+  .broader-heading p { color: var(--muted); font-size: .92rem; line-height: 1.85; margin-top: 1rem; }
+  .broader-example > a:first-of-type { display: block; }
+  .broader-example img { width: 100%; height: auto; display: block; border: 1px solid rgba(26,26,24,.15); margin-bottom: 1.25rem; }
+  .signal-preview a:focus-visible, .broader-example a:focus-visible { outline: 3px solid var(--warm); outline-offset: 5px; }
+  @media (max-width: 768px) {
+    .methodology { padding: 0; }
+    .method-shell { padding: 4rem 1.5rem; }
+    .method-shell .methodology-header { gap: 1.5rem; margin-bottom: 2.5rem; }
+    .sample-heading { display: block; }
+    .sample-heading h3, .broader-heading h3 { font-size: 1.6rem; }
+    .sample-heading > p { text-align: left; margin-top: 1rem; }
+    .signal-preview figcaption { font-size: .7rem; flex-wrap: wrap; }
+    .decision-example { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 0; margin-top: 1.5rem; }
+    .decision-example .section-label { margin-bottom: 1rem; }
+    .broader-example { padding-top: 2rem; }
   }
 </style>
 </head>
@@ -459,112 +464,41 @@
   </div>
 </section>
 
-<section class="methodology" id="methodology">
-  <div class="methodology-inner">
+<section class="methodology" id="methodology" aria-labelledby="method-title">
+  <div class="method-shell">
     <div class="methodology-header">
       <div>
         <div class="section-label">How I Read a Brand</div>
-        <h2 class="section-title">
-          Surface signals<br>
-          reveal <em>structural truth.</em>
-        </h2>
+        <h2 class="section-title" id="method-title">Start with an event.<br>Examine <em>the tension.</em></h2>
       </div>
-      <p class="methodology-desc">
-        I begin with what can be observed, then trace it one layer deeper. A pricing hesitation, team misalignment, or message that stopped landing can point to a structural tension underneath. I trace that tension to its governing assumption, then build the diagnosis around what actually needs to be resolved.
-      </p>
+      <p class="methodology-desc">I establish what changed, examine the competing requirements it introduces, and explain what they may mean for the brand. The diagnosis separates what the evidence supports from what still needs to be understood.</p>
     </div>
-  </div>
-
-    <div class="logic-flow">
-      <img src="surface-diagnosis.png" alt="Observable Event → Structural Tension → Market Implication">
+    <div class="sample-heading">
+      <div><span class="sample-kicker">Inside a Signal Read</span><h3>When a new channel changes how a brand is chosen.</h3></div>
+      <p>An anonymized public-source sample<br>Social-commerce channel expansion</p>
     </div>
-
-  <div class="methodology-inner" style="padding: 3rem 4rem 7rem; margin: 0 auto;">
-    <!-- CASES CAROUSEL -->
-    <div class="cases-wrap">
-      <div class="cases-label">Diagnosis in Practice</div>
-      <div class="cases-carousel">
-        <!-- Case 1 -->
-        <div class="case active">
-          <div class="case-index">01 / 03</div>
-          <h3 class="case-title">Revenue is growing.<br>Confidence is not.</h3>
-          <div class="case-flow">
-            <div class="case-block">
-              <span class="case-block-label">Observable Event</span>
-              <p>Revenue continues growing. New channels continue performing. Yet leadership feels increasingly uncertain about future expansion.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block">
-              <span class="case-block-label">Structural Tension</span>
-              <p>Growth has outpaced the structure originally designed to support it.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block case-block-implication">
-              <span class="case-block-label">Market Implication</span>
-              <p>Expansion decisions become slower, riskier, and increasingly reactive.</p>
-            </div>
-          </div>
-          <button type="button" class="case-next" onclick="nextCase()">Next case →</button>
-        </div>
-        <!-- Case 2 -->
-        <div class="case">
-          <div class="case-index">02 / 03</div>
-          <h3 class="case-title">Customers hesitate despite<br>strong product reviews.</h3>
-          <div class="case-flow">
-            <div class="case-block">
-              <span class="case-block-label">Observable Event</span>
-              <p>The product is well reviewed. Repeat customers remain loyal. New customers hesitate at the price point.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block">
-              <span class="case-block-label">Structural Tension</span>
-              <p>The brand's value is experienced after purchase, but poorly communicated before purchase.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block case-block-implication">
-              <span class="case-block-label">Market Implication</span>
-              <p>Customer acquisition costs rise while conversion rates decline.</p>
-            </div>
-          </div>
-          <button type="button" class="case-next" onclick="nextCase()">Next case →</button>
-        </div>
-        <!-- Case 3 -->
-        <div class="case">
-          <div class="case-index">03 / 03</div>
-          <h3 class="case-title">The team keeps reopening<br>the same decisions.</h3>
-          <div class="case-flow">
-            <div class="case-block">
-              <span class="case-block-label">Observable Event</span>
-              <p>Positioning discussions never seem to end. Different departments describe the brand differently.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block">
-              <span class="case-block-label">Structural Tension</span>
-              <p>The organization is operating from multiple brand definitions simultaneously.</p>
-            </div>
-            <div class="case-arrow">→</div>
-            <div class="case-block case-block-implication">
-              <span class="case-block-label">Market Implication</span>
-              <p>Execution slows. Alignment weakens. Market signals become harder to interpret.</p>
-            </div>
-          </div>
-          <button type="button" class="case-next" onclick="nextCase()">Back to first →</button>
-        </div>
+    <figure class="signal-preview">
+      <a href="/signal-read-public-case-sample.pdf#page=4" target="_blank" rel="noopener" aria-label="Open the Signal Read sample at page 4, Structural Tension, in a new tab">
+        <img src="signal-read-structural-tension.png" width="1920" height="1080" loading="lazy" alt="Signal Read, page 4: curated retail authority and platform-native discovery are competing requirements within the same channel.">
+      </a>
+      <figcaption><span>Structural Tension · Page 4 of 8</span><a href="/signal-read-public-case-sample.pdf#page=4" target="_blank" rel="noopener">Explore the sample ↗</a></figcaption>
+    </figure>
+    <div class="decision-example" aria-labelledby="decision-heading">
+      <div>
+        <div class="section-label">What the Diagnosis Exposes</div>
+        <h3 id="decision-heading">A clearer role for<br>the next decision.</h3>
       </div>
-      <!-- Dots -->
-      <div class="case-dots">
-        <button type="button" class="case-dot active" onclick="goCase(0)" aria-label="Show diagnosis case 1"></button>
-        <button type="button" class="case-dot" onclick="goCase(1)" aria-label="Show diagnosis case 2"></button>
-        <button type="button" class="case-dot" onclick="goCase(2)" aria-label="Show diagnosis case 3"></button>
+      <div class="decision-copy">
+        <p>In this sample, a retailer enters a channel shaped by creators, exclusive drops, and in-platform purchase. The diagnosis examines whether those mechanics extend its authority as a trusted curator or make that authority less visible.</p>
+        <p>That makes the channel’s role worth clarifying before the next decisions about creators, exclusivity, and product launches.</p>
+        <p class="sample-boundary">One event. A focused diagnosis. This sample does not establish a recurring pattern or measure customer response.</p>
+        <a href="/signal-read-public-case-sample.pdf" target="_blank" rel="noopener" class="btn-ghost">Read the full Signal Read ↗</a>
       </div>
     </div>
-
-    <div class="staircase-img">
-      <div style="max-width: 900px; margin: 0 auto 1.5rem; padding: 0 4rem;">
-        <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem;"><span style="display:block;width:2rem;height:1px;background:var(--warm);"></span>What the brief maps</div>
-        <p style="font-size: 0.92rem; color: var(--muted); line-height: 1.8;">The diagnosis traces from what you can already see on the surface down to the governing assumptions beneath. Each layer reveals what the layer above is actually caused by.</p>
-      </div>
-      <img src="structural-clarity-brief.png" alt="Surface Signals → Recurring Decision Patterns → Structural Tensions → Governing Assumptions">
+    <div class="broader-example">
+      <div class="broader-heading"><div class="section-label">When the Tension Recurs</div><h3>From one signal to a wider decision structure.</h3><p>A Structural Clarity Brief examines multiple signals, recurring decision patterns, and the assumptions that may be sustaining them. Its broader evidence base supports strategic options and guardrails.</p></div>
+      <a href="/structural-clarity-brief-public-case-simulation.pdf" target="_blank" rel="noopener"><img src="structural-clarity-brief.png" loading="lazy" alt="Structural Clarity Brief maps surface signals, recurring decision patterns, structural tensions, and governing assumptions."></a>
+      <a href="/structural-clarity-brief-public-case-simulation.pdf" target="_blank" rel="noopener" class="btn-ghost">Explore the Structural Clarity Brief ↗</a>
     </div>
   </div>
 </section>
@@ -787,22 +721,7 @@
   <a href="semantic-hub.html" style="font-size:0.65rem;color:rgba(245,242,236,0.15);text-decoration:none;letter-spacing:0.05em;">Semantic Reference</a>
 </footer>
 
-<script>
-  let current = 0;
-  const cases = document.querySelectorAll('.case');
-  const dots = document.querySelectorAll('.case-dot');
 
-  function showCase(n) {
-    cases[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = (n + cases.length) % cases.length;
-    cases[current].classList.add('active');
-    dots[current].classList.add('active');
-  }
-
-  function nextCase() { showCase(current + 1); }
-  function goCase(n) { showCase(n); }
-</script>
 
 </body>
 </html>
