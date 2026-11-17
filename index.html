@@ -721,5 +721,30 @@
 
 
 
+<!-- GA4 contact-intent tracking: clicks only, not completed inquiries -->
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+
+    var href = link.getAttribute('href') || '';
+    var eventName = '';
+
+    if (href.startsWith('mailto:') && href.includes('subject=Signal%20Read%20Request')) {
+      eventName = 'signal_read_contact_click';
+    } else if (href.startsWith('mailto:') && href.includes('subject=Structural%20Clarity%20Brief%20Request')) {
+      eventName = 'clarity_brief_contact_click';
+    } else if (href === 'https://www.linkedin.com/in/leann-flows/' && link.closest('.pricing-linkedin')) {
+      eventName = 'linkedin_contact_click';
+    }
+
+    if (eventName) {
+      gtag('event', eventName, {
+        contact_method: href.startsWith('mailto:') ? 'email' : 'linkedin'
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
