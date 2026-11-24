@@ -3,13 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSJWCCZ9N"></script>
+<!-- Google Analytics 4: exclude browsers explicitly marked as internal -->
 <script>
+(function () {
+  var isInternal = false;
+  try {
+    isInternal = window.localStorage.getItem('leann_internal_browser') === '1';
+  } catch (error) {
+    // If storage is unavailable, keep analytics working for public visitors.
+  }
+
+  if (isInternal) {
+    console.info('GA4 disabled for internal browser');
+    return;
+  }
+
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7BSJWCCZ9N');
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-7BSJWCCZ9N');
+
+  var gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-7BSJWCCZ9N';
+  document.head.appendChild(gaScript);
+})();
 </script>
 
 <!-- SEO -->
